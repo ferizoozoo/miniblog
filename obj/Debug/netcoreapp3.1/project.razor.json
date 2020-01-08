@@ -1,0 +1,52 @@
+{
+  "FilePath": "/home/len/dev/projects/web-projects/MiniBlog/MiniBlog.csproj",
+  "Configuration": {
+    "ConfigurationName": "MVC-3.0",
+    "LanguageVersion": "3.0",
+    "Extensions": [
+      {
+        "ExtensionName": "MVC-3.0"
+      }
+    ]
+  },
+  "ProjectWorkspaceState": null,
+  "RootNamespace": "MiniBlog",
+  "Documents": [
+    {
+      "FilePath": "/home/len/dev/projects/web-projects/MiniBlog/Pages/Shared/_ValidationScriptsPartial.cshtml",
+      "TargetPath": "Pages/Shared/_ValidationScriptsPartial.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/home/len/dev/projects/web-projects/MiniBlog/Pages/_ViewStart.cshtml",
+      "TargetPath": "Pages/_ViewStart.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/home/len/dev/projects/web-projects/MiniBlog/Pages/_ViewImports.cshtml",
+      "TargetPath": "Pages/_ViewImports.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/home/len/dev/projects/web-projects/MiniBlog/Pages/Privacy.cshtml",
+      "TargetPath": "Pages/Privacy.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/home/len/dev/projects/web-projects/MiniBlog/Pages/Index.cshtml",
+      "TargetPath": "Pages/Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/home/len/dev/projects/web-projects/MiniBlog/Pages/Error.cshtml",
+      "TargetPath": "Pages/Error.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/home/len/dev/projects/web-projects/MiniBlog/Pages/Shared/_Layout.cshtml",
+      "TargetPath": "Pages/Shared/_Layout.cshtml",
+      "FileKind": "mvc"
+    }
+  ],
+  "SerializationFormat": "0.2"
+}
