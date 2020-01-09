@@ -26,7 +26,8 @@ namespace MiniBlog
         {
             services.AddRazorPages();
             // TODO : Configure the database provider!
-            services.AddDbContext<MiniBlogContext>();
+            services.AddDbContext<MiniBlogContext>(options =>
+                options.UseNpgsql(Configuration.GetConnectionString()));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
