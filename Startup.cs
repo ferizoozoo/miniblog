@@ -8,6 +8,7 @@ using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using MiniBlog.Context;
 
 namespace MiniBlog
 {
@@ -24,6 +25,8 @@ namespace MiniBlog
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddRazorPages();
+            // TODO : Configure the database provider!
+            services.AddDbContext<MiniBlogContext>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
