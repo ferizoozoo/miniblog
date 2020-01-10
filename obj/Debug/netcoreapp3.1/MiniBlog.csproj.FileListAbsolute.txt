@@ -152,3 +152,8 @@
 /home/len/dev/projects/web-projects/MiniBlog/obj/Debug/netcoreapp3.1/MiniBlog.csproj.CopyComplete
 /home/len/dev/projects/web-projects/MiniBlog/obj/Debug/netcoreapp3.1/MiniBlog.dll
 /home/len/dev/projects/web-projects/MiniBlog/obj/Debug/netcoreapp3.1/MiniBlog.pdb
+/home/len/dev/projects/web-projects/MiniBlog/obj/Debug/netcoreapp3.1/Razor/Pages/Posts/Create.cshtml.g.cs
+/home/len/dev/projects/web-projects/MiniBlog/obj/Debug/netcoreapp3.1/Razor/Pages/Posts/Delete.cshtml.g.cs
+/home/len/dev/projects/web-projects/MiniBlog/obj/Debug/netcoreapp3.1/Razor/Pages/Posts/Details.cshtml.g.cs
+/home/len/dev/projects/web-projects/MiniBlog/obj/Debug/netcoreapp3.1/Razor/Pages/Posts/Edit.cshtml.g.cs
+/home/len/dev/projects/web-projects/MiniBlog/obj/Debug/netcoreapp3.1/Razor/Pages/Posts/Index.cshtml.g.cs
