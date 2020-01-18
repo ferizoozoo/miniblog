@@ -12,9 +12,9 @@ namespace MiniBlog.Pages.Posts
 {
     public class CreateModel : PageModel
     {
-        private readonly MiniBlog.Context.MiniBlogContext _context;
+        private readonly MiniBlogContext _context;
 
-        public CreateModel(MiniBlog.Context.MiniBlogContext context)
+        public CreateModel(MiniBlogContext context)
         {
             _context = context;
         }

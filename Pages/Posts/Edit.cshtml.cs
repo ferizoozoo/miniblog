@@ -13,9 +13,9 @@ namespace MiniBlog.Pages.Posts
 {
     public class EditModel : PageModel
     {
-        private readonly MiniBlog.Context.MiniBlogContext _context;
+        private readonly MiniBlogContext _context;
 
-        public EditModel(MiniBlog.Context.MiniBlogContext context)
+        public EditModel(MiniBlogContext context)
         {
             _context = context;
         }

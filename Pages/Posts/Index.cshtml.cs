@@ -12,9 +12,9 @@ namespace MiniBlog.Pages.Posts
 {
     public class IndexModel : PageModel
     {
-        private readonly MiniBlog.Context.MiniBlogContext _context;
+        private readonly MiniBlogContext _context;
 
-        public IndexModel(MiniBlog.Context.MiniBlogContext context)
+        public IndexModel(MiniBlogContext context)
         {
             _context = context;
         }

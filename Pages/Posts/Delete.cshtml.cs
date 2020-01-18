@@ -12,9 +12,9 @@ namespace MiniBlog.Pages.Posts
 {
     public class DeleteModel : PageModel
     {
-        private readonly MiniBlog.Context.MiniBlogContext _context;
+        private readonly MiniBlogContext _context;
 
-        public DeleteModel(MiniBlog.Context.MiniBlogContext context)
+        public DeleteModel(MiniBlogContext context)
         {
             _context = context;
         }

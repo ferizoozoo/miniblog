@@ -25,18 +25,8 @@
             </div>
             <div class="form-group">
                 <label asp-for="Post.Content" class="control-label"></label>
-                <input asp-for="Post.Content" class="form-control" />
+                <textarea asp-for="Post.Content" class="form-control"></textarea>
                 <span asp-validation-for="Post.Content" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Post.Likes" class="control-label"></label>
-                <input asp-for="Post.Likes" class="form-control" />
-                <span asp-validation-for="Post.Likes" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Post.DisLikes" class="control-label"></label>
-                <input asp-for="Post.DisLikes" class="form-control" />
-                <span asp-validation-for="Post.DisLikes" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <input type="submit" value="Create" class="btn btn-primary" />
