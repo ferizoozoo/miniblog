@@ -23,6 +23,7 @@ namespace MiniBlog.Migrations
                         .HasColumnType("INTEGER");
 
                     b.Property<string>("Author")
+                        .IsRequired()
                         .HasColumnType("TEXT");
 
                     b.Property<string>("Content")
@@ -36,6 +37,9 @@ namespace MiniBlog.Migrations
 
                     b.Property<int>("Likes")
                         .HasColumnType("INTEGER");
+
+                    b.Property<string>("Title")
+                        .HasColumnType("TEXT");
 
                     b.HasKey("Id");
 

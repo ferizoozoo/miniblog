@@ -13,8 +13,9 @@ namespace MiniBlog.Migrations
                 {
                     Id = table.Column<int>(nullable: false)
                         .Annotation("Sqlite:Autoincrement", true),
-                    Author = table.Column<string>(nullable: true),
+                    Author = table.Column<string>(nullable: false),
                     Date = table.Column<DateTime>(nullable: false),
+                    Title = table.Column<string>(nullable: true),
                     Content = table.Column<string>(nullable: true),
                     Likes = table.Column<int>(nullable: false),
                     DisLikes = table.Column<int>(nullable: false)

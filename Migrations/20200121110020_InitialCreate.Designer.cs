@@ -9,7 +9,7 @@ using MiniBlog.Context;
 namespace MiniBlog.Migrations
 {
     [DbContext(typeof(MiniBlogContext))]
-    [Migration("20200110080209_InitialCreate")]
+    [Migration("20200121110020_InitialCreate")]
     partial class InitialCreate
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -25,6 +25,7 @@ namespace MiniBlog.Migrations
                         .HasColumnType("INTEGER");
 
                     b.Property<string>("Author")
+                        .IsRequired()
                         .HasColumnType("TEXT");
 
                     b.Property<string>("Content")
@@ -38,6 +39,9 @@ namespace MiniBlog.Migrations
 
                     b.Property<int>("Likes")
                         .HasColumnType("INTEGER");
+
+                    b.Property<string>("Title")
+                        .HasColumnType("TEXT");
 
                     b.HasKey("Id");
 

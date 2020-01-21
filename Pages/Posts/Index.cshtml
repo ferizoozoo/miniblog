@@ -20,6 +20,9 @@
                 @Html.DisplayNameFor(model => model.Post[0].Date)
             </th>
             <th>
+                @Html.DisplayNameFor(model => model.Post[0].Title)
+            </th>
+            <th>
                 @Html.DisplayNameFor(model => model.Post[0].Content)
             </th>
             <th>
@@ -39,6 +42,9 @@
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.Date)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Title)
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.Content)
