@@ -8,8 +8,30 @@
 {
     <div class="jumbotron jumbotron-fluid">
         <div class="container">
-            <h2 class="text-center">@post.Title</h2>
-            <p class="mt-6">@post.Content</p>
+            <h1 class="text-center">@post.Title</h1>
+            <div class="row justify-content-center">
+                <div class="col-sm-3 align-end">
+                    <h5>Post by : @post.Author</h5>
+                </div>    
+                <div class="col-sm-3">
+                    <h5>Post by : @post.Date</h5>
+                </div> 
+            </div>
+            <br>
+            <p class="mt-6 text-center">@post.Content</p>
+            
+            <div class="jumbotron-footer">
+                <hr>
+                <div class="row">
+                    <div class="col-md-2 offset-1">
+                        <a href="#"><i class="material-icons">thumb_up</i></a>
+                        <a href="#"><i class="material-icons">thumb_down</i></a>
+                    </div>
+                    <div class="col-md-2 offset-6">
+                        <a href="#">Go to the post</a>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 }

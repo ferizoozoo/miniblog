@@ -21,9 +21,11 @@ namespace MiniBlog.Pages.Posts
 
         public IList<Post> Post { get;set; }
 
+        [HttpGet("id")]
         public async Task OnGetAsync()
         {
             Post = await _context.Posts.ToListAsync();
         }
+
     }
 }
