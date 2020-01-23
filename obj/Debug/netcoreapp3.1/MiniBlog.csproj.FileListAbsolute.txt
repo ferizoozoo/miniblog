@@ -157,3 +157,12 @@
 /home/len/dev/projects/web-projects/MiniBlog/obj/Debug/netcoreapp3.1/Razor/Pages/Posts/Details.cshtml.g.cs
 /home/len/dev/projects/web-projects/MiniBlog/obj/Debug/netcoreapp3.1/Razor/Pages/Posts/Edit.cshtml.g.cs
 /home/len/dev/projects/web-projects/MiniBlog/obj/Debug/netcoreapp3.1/Razor/Pages/Posts/Index.cshtml.g.cs
+/home/len/dev/projects/web-projects/MiniBlog/bin/Debug/netcoreapp3.1/MiniBlog.StaticWebAssets.xml
+/home/len/dev/projects/web-projects/MiniBlog/bin/Debug/netcoreapp3.1/Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+/home/len/dev/projects/web-projects/MiniBlog/bin/Debug/netcoreapp3.1/Microsoft.AspNetCore.Identity.UI.Views.V3.dll
+/home/len/dev/projects/web-projects/MiniBlog/bin/Debug/netcoreapp3.1/Microsoft.AspNetCore.Identity.UI.Views.V4.dll
+/home/len/dev/projects/web-projects/MiniBlog/bin/Debug/netcoreapp3.1/Microsoft.AspNetCore.Identity.UI.dll
+/home/len/dev/projects/web-projects/MiniBlog/obj/Debug/netcoreapp3.1/MiniBlog.MvcApplicationPartsAssemblyInfo.cs
+/home/len/dev/projects/web-projects/MiniBlog/obj/Debug/netcoreapp3.1/Razor/Areas/Identity/Pages/_ValidationScriptsPartial.cshtml.g.cs
+/home/len/dev/projects/web-projects/MiniBlog/obj/Debug/netcoreapp3.1/Razor/Areas/Identity/Pages/_ViewStart.cshtml.g.cs
+/home/len/dev/projects/web-projects/MiniBlog/obj/Debug/netcoreapp3.1/Razor/Pages/Shared/_LoginPartial.cshtml.g.cs

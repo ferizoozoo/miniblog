@@ -9,6 +9,7 @@ using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using Microsoft.AspNetCore.Identity;
 using MiniBlog.Context;
 
 namespace MiniBlog
@@ -59,6 +60,9 @@ namespace MiniBlog
         app.UseStaticFiles();
 
         app.UseRouting();
+
+        app.UseAuthentication();
+        app.UseAuthorization();
 
         app.UseEndpoints(endpoints =>
         {
