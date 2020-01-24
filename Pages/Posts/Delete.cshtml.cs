@@ -5,11 +5,13 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.AspNetCore.Authorization;
 using MiniBlog.Context;
 using MiniBlog.Models;
 
 namespace MiniBlog.Pages.Posts
 {
+    [Authorize]
     public class DeleteModel : PageModel
     {
         private readonly MiniBlogContext _context;

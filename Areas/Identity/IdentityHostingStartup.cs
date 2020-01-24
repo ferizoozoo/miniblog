@@ -16,8 +16,8 @@ namespace MiniBlog.Areas.Identity
         {
             builder.ConfigureServices((context, services) => {
                 services.AddDbContext<MiniBlogIdentityDbContext>(options =>
-                    options.UseSqlServer(
-                        context.Configuration.GetConnectionString("MiniBlogIdentityDbContextConnection")));
+                    options.UseSqlite(
+                        context.Configuration.GetConnectionString("MiniBlogIdentityDbContextConnectionTest")));
 
                 services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
                     .AddEntityFrameworkStores<MiniBlogIdentityDbContext>();
