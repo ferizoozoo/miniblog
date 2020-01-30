@@ -41,6 +41,7 @@ namespace MiniBlog
         }
 
         services.AddRazorPages();
+        services.AddTransient<FirstTimeAdminRegistration>();
     }
 
     public void Configure(IApplicationBuilder app)

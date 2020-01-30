@@ -19,7 +19,8 @@ namespace MiniBlog.Areas.Identity
                     options.UseSqlite(
                         context.Configuration.GetConnectionString("MiniBlogIdentityDbContextConnectionTest")));
 
-                services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
+                services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = false)
+                    .AddRoles<IdentityRole>()
                     .AddEntityFrameworkStores<MiniBlogIdentityDbContext>();
             });
         }
