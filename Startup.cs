@@ -42,6 +42,7 @@ namespace MiniBlog
 
         services.AddRazorPages();
         services.AddTransient<FirstTimeAdminRegistration>();
+        services.AddControllers();
     }
 
     public void Configure(IApplicationBuilder app)
@@ -68,6 +69,7 @@ namespace MiniBlog
         app.UseEndpoints(endpoints =>
         {
             endpoints.MapRazorPages();
+            endpoints.MapControllers();
         });
     }
 }
