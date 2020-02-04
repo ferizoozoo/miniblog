@@ -1,8 +1,4 @@
-using System;
-using System.Collections.Generic;
-using System.Threading.Tasks;
 using MiniBlog.Context;
-using MiniBlog.Models;
 using Microsoft.AspNetCore.Mvc;
 
 namespace MiniBlog.Controllers
@@ -21,6 +17,12 @@ namespace MiniBlog.Controllers
         [HttpPost]
         public ActionResult Post([FromQuery] int itemid)
         {
+            // Check if the user is signed in, in order to like the content.
+            if (!User.Identity.IsAuthenticated)
+            {
+                return Redirect("Identity/Account/Login");
+            }
+            
             var post = _context.Posts.Find(itemid);
             post.Likes++;
             _context.Posts.Update(post);

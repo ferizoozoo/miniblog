@@ -1,6 +1,3 @@
-/* TODO : Define a dependency (service) that checks if there is an administrator,
- * if not then create an administrator role for the admin of the site.
- */ 
  using System.Threading.Tasks;
  using Microsoft.Extensions.Logging;
  using Microsoft.AspNetCore.Identity;

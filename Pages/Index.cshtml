@@ -23,22 +23,26 @@
             <div class="jumbotron-footer">
                 <hr>
                 <div class="row">
-                    <form asp-controller="Like" asp-action="Post" asp-route-itemid=@post.Id method="post">
-                        <div class="form-group col-md-2 offset-1">
-                            <button class="submit form-control"><i class="material-icons">thumb_up</i></button>
-                            <span>@post.Likes</span>
-                        </div>
-                    </form>
-                    <form asp-controller="Dislike" asp-action="Post" asp-route-itemid=@post.Id method="post">
-                        <div class="form-group col-md-2 offset-1">
-                            <button class="submit form-control"><i class="material-icons">thumb_down</i></button>
-                            <span>@post.DisLikes</span>
-                        </div>
-                    </form>
-                    <div class="col-md-2 offset-6">
-                        <a href="#">Go to the post</a>
+                    <div class="col-md-2 offset-1">
+                        <form asp-controller="Like" asp-action="Post" asp-route-itemid=@post.Id method="post">
+                            <div class="form-group">
+                                <button class="submit btn btn-success form-control">
+                                    <i class="material-icons">thumb_up</i>
+                                    <span>@post.Likes</span>
+                                </button>
+                            </div>
+                        </form>                    
                     </div>
-                    
+                    <div class="col-md-2 offset-1">
+                        <form asp-controller="Dislike" asp-action="Post" asp-route-itemid=@post.Id method="post">
+                            <div class="form-group">
+                                <button class="submit btn btn-danger form-control">
+                                    <i class="material-icons">thumb_down</i>
+                                    <span>@post.DisLikes</span>
+                                </button>
+                            </div>
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>
