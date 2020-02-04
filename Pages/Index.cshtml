@@ -48,3 +48,19 @@
         </div>
     </div>
 }
+
+@{
+    var prevDisabled = !Model.Posts.HasPreviousPage ? "disabled" : "";
+    var nextDisabled = !Model.Posts.HasNextPage ? "disabled" : "";
+}
+
+<a asp-page="./Index"
+   asp-route-pageIndex="@(Model.Posts.PageIndex - 1)"
+   class="btn btn-primary @prevDisabled">
+    Previous
+</a>
+<a asp-page="./Index"
+   asp-route-pageIndex="@(Model.Posts.PageIndex + 1)"
+   class="btn btn-primary @nextDisabled">
+    Next
+</a>
