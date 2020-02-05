@@ -6,7 +6,6 @@
 ## Project files
 *.db
 appsettings.*
-Areas/Identity/
 
 
 # Visual Studio Code files
