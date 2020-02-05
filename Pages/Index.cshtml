@@ -6,7 +6,7 @@
 
 @foreach (var post in @Model.Posts)
 {
-    <div class="jumbotron jumbotron-fluid">
+    <div id=@post.Id class="jumbotron jumbotron-fluid">
         <div class="container">
             <h1 class="text-center">@post.Title</h1>
             <div class="row justify-content-center">

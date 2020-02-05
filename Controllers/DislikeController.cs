@@ -1,3 +1,5 @@
+// Attention : The two DislikeController.cs and LikeController.cs should be definitely refactored.
+
 using MiniBlog.Context;
 using Microsoft.AspNetCore.Mvc;
 
@@ -8,7 +10,7 @@ namespace MiniBlog.Controllers
     public class DislikeController : ControllerBase
     {
         private readonly MiniBlogContext _context;
-        
+
         public DislikeController(MiniBlogContext context)
         {
             _context = context;
@@ -27,7 +29,8 @@ namespace MiniBlog.Controllers
             post.DisLikes++;
             _context.Posts.Update(post);
             _context.SaveChanges();
-            return RedirectToPage("/Index");
+            // Check the security of this code for production!
+            return Redirect(Request.Headers["referer"].ToString().ToLower() + $"#{post.Id}");
         }
     }
 }
