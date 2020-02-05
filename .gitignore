@@ -4,9 +4,9 @@
 ## Get latest from https://github.com/github/gitignore/blob/master/VisualStudio.gitignore
 
 ## Project files
-.db
+*.db
 appsettings.*
-Areas/
+Areas/Identity/
 
 
 # Visual Studio Code files
